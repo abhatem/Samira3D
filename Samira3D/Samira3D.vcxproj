@@ -82,8 +82,16 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="MainComponent.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="Resources\Samira3D.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Samira3D.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
