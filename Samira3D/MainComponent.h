@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Game.h"
+
 namespace SE {
 	class MainComponent
 	{
@@ -16,5 +18,6 @@ namespace SE {
 	private:
 		bool m_isRunning;
 		double frameCap = 5000.0;
+		Game m_game;
 	};
 }

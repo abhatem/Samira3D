@@ -1,6 +1,8 @@
 #include "MainComponent.h"
 #include "Time.h"
 #include "Window.h"
+#include "Input.h"
+
 #include <iostream>
 #include <GLFW\glfw3.h>
 #include <thread>
@@ -10,6 +12,7 @@ using namespace SE;
 MainComponent::MainComponent()
 {
 	Window::init();
+	Input::init(Window::getWindowHandle());
 	m_isRunning = false;
 }
 
@@ -48,6 +51,7 @@ void MainComponent::update()
 			unprocessedTime -= frameTime;
 
 			// UPDATE GAME
+			m_game.update();
 			Window::update();
 			if (Window::shouldClose()) {
 				m_isRunning = false;
@@ -81,8 +85,10 @@ void MainComponent::update()
 void MainComponent::render()
 {
 	Window::render();
+	m_game.render();
 }
 void MainComponent::dispose()
 {
 	Window::dispose();
+	m_game.dispose();
 }

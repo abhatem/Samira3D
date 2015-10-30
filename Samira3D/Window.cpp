@@ -1,8 +1,6 @@
 #include "Window.h"
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
 #include <iostream>
-
+#include "ERROR.h"
 namespace SE
 {
 	namespace Window
@@ -15,26 +13,32 @@ namespace SE
 		void init()
 		{
 			if (!glfwInit())
-				exit(1);
+				ERROR(1, "Faild to initialize GLFW.");
 
 			glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+
+			m_window = glfwCreateWindow(1024, 768, "My Title", NULL, NULL);
+			if (!m_window)
+			{
+				glfwTerminate();
+				ERROR(2, "Faild to create GLFW window.");
+			}
+
+			glfwMakeContextCurrent(m_window); // Initialize GLEW 
+			glewExperimental = true; // Needed in core profile 
+			if (glewInit() != GLEW_OK) {
+				ERROR(1, "Faild to initialize GLEW.");
+			}
 		}
 
 		void createWindow()
 		{
-			m_window = glfwCreateWindow(800, 600, "My Title", NULL, NULL);
-			if (!m_window)
-			{
-				glfwTerminate();
-				exit(EXIT_FAILURE);
-			}
 			
-			glfwMakeContextCurrent(m_window); // Initialize GLEW 
-			glewExperimental = true; // Needed in core profile 
-			if (glewInit() != GLEW_OK) {
-				fprintf(stderr, "Failed to initialize GLEW\n");
-				exit(1);
-			}
+		}
+
+		GLFWwindow* getWindowHandle()
+		{
+			return m_window;
 		}
 
 		bool shouldClose()
