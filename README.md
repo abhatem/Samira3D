@@ -17,6 +17,7 @@ Todo list for now:
 <ul>
 <li> Support mouse input -easy
 <li> Support rendering with mesh faces(index buffers) -medium
+<li> add class for handling materials
 <ul>
 
 More at http://www.ab-hatem.com/category/samira-engine/ 
