@@ -4,7 +4,6 @@
 
 void keyPresed(int key)
 {
-
 	std::cout << "key " << char(key) << " pressed!" << std::endl;
 }
 

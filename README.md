@@ -15,10 +15,10 @@ Might depend on in the future:
 
 Todo list for now:
 <ul>
-<li> Support mouse input -easy
-<li> Support rendering with mesh faces(index buffers) -medium
-<li> add class for handling materials
-<li> add class for handling shaders
+<li> Support mouse input - easy
+<li> Support rendering with mesh faces(index buffers) - medium
+<li> add class for handling materials - medium
+<li> add class for handling shaders - easy
 <ul>
 
 More at http://www.ab-hatem.com/category/samira-engine/ 
