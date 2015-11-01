@@ -17,6 +17,8 @@ namespace S3D
 					Text += "\n" + Line;
 				Stream.close();
 			}
+
+			return Text;
 		}
 	}
 }

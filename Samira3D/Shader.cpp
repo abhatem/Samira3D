@@ -58,7 +58,7 @@ void Shader::linkShader()
 	std::vector<char> ProgramErrorMessage(std::max(InfoLogLength, int(1)));
 	glGetProgramInfoLog(m_programId, InfoLogLength, NULL, &ProgramErrorMessage[0]);
 	//fprintf(stdout, "%s\n", &ProgramErrorMessage[0]);
-	ERROR(3, std::string(ProgramErrorMessage.data));
+	ERROR(3, std::string(ProgramErrorMessage.data()));
 }
 
 void Shader::addProgram(std::string text, int type)
@@ -78,7 +78,7 @@ void Shader::addProgram(std::string text, int type)
 	std::vector<char> shaderErrorMessage(InfoLogLength);
 	glGetShaderInfoLog(shader, InfoLogLength, NULL, &shaderErrorMessage[0]);
 	//fprintf(stdout, "%s\n", &shaderErrorMessage[0]);
-	ERROR(3, std::string(shaderErrorMessage.data));
+	ERROR(3, std::string(shaderErrorMessage.data()));
 
 	glAttachShader(m_programId, shader);
 }
