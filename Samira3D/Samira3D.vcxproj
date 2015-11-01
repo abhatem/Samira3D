@@ -51,7 +51,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\abo0ody\Documents\c++\boost_1_59_0\stage\lib;C:\Users\abo0ody\Documents\c++\glew-1.13.0\lib\Release\Win32;C:\Users\abo0ody\Documents\c++\glfw\glfw-3.1.2.bin.WIN32\lib-vc2013;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -74,7 +74,12 @@
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainComponent.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="RenderUtil.cpp" />
+    <ClCompile Include="ResourceLoader.cpp" />
+    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Vertex.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -82,8 +87,13 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="MainComponent.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="RenderUtil.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceLoader.h" />
+    <ClInclude Include="Shader.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="Vertex.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>

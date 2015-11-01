@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-	SE::MainComponent mc;
+	S3D::MainComponent mc;
 	mc.start();
 	return 0;
 }

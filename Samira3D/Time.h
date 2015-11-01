@@ -2,7 +2,7 @@
 
 #include <chrono>
 #include <ctime>
-namespace SE {
+namespace S3D {
 	namespace Time 
 	{
 		extern double getTime();

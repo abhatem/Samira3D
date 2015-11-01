@@ -1,7 +1,7 @@
 #include "ERROR.h"
 #include <iostream>
 
-using namespace SE;
+using namespace S3D;
 
 ERROR::ERROR(int errorCode, std::string str)
 {

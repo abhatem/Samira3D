@@ -2,7 +2,7 @@
 
 #include "Game.h"
 
-namespace SE {
+namespace S3D {
 	class MainComponent
 	{
 	public:
@@ -11,13 +11,13 @@ namespace SE {
 
 
 		void start();
-		void update();
+		void update(); //contains main loop
 		void render();
 		void dispose();
 
 	private:
 		bool m_isRunning;
 		double frameCap = 5000.0;
-		Game m_game;
+		Game *m_game;
 	};
 }

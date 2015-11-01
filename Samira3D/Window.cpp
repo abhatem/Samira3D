@@ -1,7 +1,7 @@
 #include "Window.h"
 #include <iostream>
 #include "ERROR.h"
-namespace SE
+namespace S3D
 {
 	namespace Window
 	{
@@ -15,6 +15,8 @@ namespace SE
 			if (!glfwInit())
 				ERROR(1, "Faild to initialize GLFW.");
 
+			
+
 			glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 			m_window = glfwCreateWindow(1024, 768, "My Title", NULL, NULL);
@@ -26,9 +28,12 @@ namespace SE
 
 			glfwMakeContextCurrent(m_window); // Initialize GLEW 
 			glewExperimental = true; // Needed in core profile 
-			if (glewInit() != GLEW_OK) {
+			//ERROR(2, "YEAH!");
+			if (glewInit() != GLEW_OK)
+			{
 				ERROR(1, "Faild to initialize GLEW.");
 			}
+			
 		}
 
 		void createWindow()

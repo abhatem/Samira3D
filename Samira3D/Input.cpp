@@ -3,7 +3,7 @@
 #include <boost\signals2.hpp>
 #include <GLFW\glfw3.h>
 
-namespace SE 
+namespace S3D
 {
 	namespace Input
 	{

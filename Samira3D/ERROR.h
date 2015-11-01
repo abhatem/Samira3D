@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-namespace SE{
+namespace S3D{
 	class ERROR
 	{
 	public:

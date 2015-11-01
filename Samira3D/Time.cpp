@@ -1,6 +1,6 @@
 #include <GLFW\glfw3.h>
 
-namespace SE 
+namespace S3D
 {
 	namespace Time
 	{

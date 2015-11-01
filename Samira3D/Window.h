@@ -1,7 +1,7 @@
 #pragma once
 #include <GL\glew.h>
 #include <GLFW\glfw3.h>
-namespace SE
+namespace S3D
 {
 	namespace Window
 	{

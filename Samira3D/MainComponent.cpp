@@ -1,13 +1,14 @@
 #include "MainComponent.h"
 #include "Time.h"
 #include "Window.h"
-#include "Input.h"
-
 #include <iostream>
 #include <GLFW\glfw3.h>
 #include <thread>
 #include <chrono>
-using namespace SE;
+
+#include "Input.h"
+#include "RenderUtil.h"
+using namespace S3D;
 
 MainComponent::MainComponent()
 {
@@ -27,9 +28,14 @@ void MainComponent::start()
 {
 	m_isRunning = true;
 	Window::createWindow();
+	RenderUtil::initGraphics();
+	m_game = new Game();
+	std::cout << "OpenGL version " << RenderUtil::getOpenGLVersion() << std::endl;
 	update();
 }
 
+
+//contains main loop
 void MainComponent::update()
 {
 	int frames = 0;
@@ -51,7 +57,7 @@ void MainComponent::update()
 			unprocessedTime -= frameTime;
 
 			// UPDATE GAME
-			m_game.update();
+			m_game->update();
 			Window::update();
 			if (Window::shouldClose()) {
 				m_isRunning = false;
@@ -84,11 +90,13 @@ void MainComponent::update()
 
 void MainComponent::render()
 {
+	RenderUtil::clearScreen();
+	m_game->render();
 	Window::render();
-	m_game.render();
+	
 }
 void MainComponent::dispose()
 {
 	Window::dispose();
-	m_game.dispose();
+	m_game->dispose();
 }
