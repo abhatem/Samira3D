@@ -12,4 +12,11 @@ Might depend on in the future:
 <li> assimp http://assimp.sourceforge.net/
 <li> SOIL http://www.lonesock.net/soil.html
 </ul>
+
+Todo list for now:
+<ul>
+<li> Support mouse input -easy
+<li> Support rendering with mesh faces(index buffers) -medium
+<ul>
+
 More at http://www.ab-hatem.com/category/samira-engine/ 
