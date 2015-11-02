@@ -58,7 +58,8 @@ void Shader::linkShader()
 	std::vector<char> ProgramErrorMessage(std::max(InfoLogLength, int(1)));
 	glGetProgramInfoLog(m_programId, InfoLogLength, NULL, &ProgramErrorMessage[0]);
 	//fprintf(stdout, "%s\n", &ProgramErrorMessage[0]);
-	ERROR(3, std::string(ProgramErrorMessage.data()));
+	if (!Result)
+		ERROR(3, std::string(ProgramErrorMessage.data()));
 }
 
 void Shader::addProgram(std::string text, int type)
@@ -68,8 +69,8 @@ void Shader::addProgram(std::string text, int type)
 
 	unsigned int shader = glCreateShader(type);
 	if (!shader) ERROR(2, "Could not create shader");
-	
-	glShaderSource(shader, 1, (GLchar* const *)text.c_str(), NULL);
+	char const *c = text.c_str();
+	glShaderSource(shader, 1, &c, NULL);
 	glCompileShader(shader);
 
 	glGetShaderiv(shader, GL_COMPILE_STATUS, &Result);
@@ -78,7 +79,9 @@ void Shader::addProgram(std::string text, int type)
 	std::vector<char> shaderErrorMessage(InfoLogLength);
 	glGetShaderInfoLog(shader, InfoLogLength, NULL, &shaderErrorMessage[0]);
 	//fprintf(stdout, "%s\n", &shaderErrorMessage[0]);
-	ERROR(3, std::string(shaderErrorMessage.data()));
+	if (!Result){
+		ERROR(3, std::string(shaderErrorMessage.data()));
+	}
 
 	glAttachShader(m_programId, shader);
 }

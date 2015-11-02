@@ -103,6 +103,10 @@
   <ItemGroup>
     <ResourceCompile Include="Samira3D.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="basicShader.frag" />
+    <None Include="basicShader.vert" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

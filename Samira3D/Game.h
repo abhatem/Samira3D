@@ -1,5 +1,6 @@
 #pragma once
 #include "Mesh.h"
+#include "Shader.h"
 
 class Game
 {
@@ -13,6 +14,6 @@ public:
 
 private:
 	S3D::Mesh mesh;
-
+	S3D::Shader shader;
 };
 

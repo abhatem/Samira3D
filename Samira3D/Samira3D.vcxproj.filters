@@ -16,6 +16,12 @@
     <Filter Include="Game">
       <UniqueIdentifier>{4d2674c4-abc8-40b3-aadd-1bd1a05ce9bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{75154d87-aecb-4275-86e5-819aae25ab9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\shaders">
+      <UniqueIdentifier>{abe9e225-c388-4e02-a4a0-c24359d344c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -105,5 +111,13 @@
     <ResourceCompile Include="Samira3D.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basicShader.vert">
+      <Filter>res\shaders</Filter>
+    </None>
+    <None Include="basicShader.frag">
+      <Filter>res\shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
