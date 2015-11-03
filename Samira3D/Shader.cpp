@@ -1,8 +1,11 @@
 #include "Shader.h"
 #include "ERROR.h"
+#include "WARNING.h"
 #include <GL\glew.h>
 #include <vector>
 #include <algorithm>
+#include <utility>
+#include <glm/gtc/type_ptr.hpp>
 
 using namespace S3D;
 
@@ -24,6 +27,35 @@ Shader::Shader(std::string vertexShader, std::string fragmentShader)
 }
 */
 
+void Shader::addUniform(std::string uniform)
+{
+	int uniformLocation = glGetUniformLocation(m_programId, uniform.c_str());
+
+	if (uniformLocation == 0xffffffff) WARNING(1, "could not find uniform: " + uniform);
+
+	m_uniforms.insert(std::pair<std::string, int>(uniform, uniformLocation));
+}
+
+
+void Shader::setUniformi(std::string uniformName, int value)
+{
+	glUniform1i(m_uniforms[uniformName], value);
+}
+
+void Shader::setUniformf(std::string uniformName, float value)
+{
+	glUniform1f(m_uniforms[uniformName], value);
+}
+
+void Shader::setUniform(std::string uniformName, glm::vec3 value)
+{
+	glUniform3f(m_uniforms[uniformName], value.x, value.y, value.z);
+}
+
+void Shader::setUniform(std::string uniformName, const glm::mat4 &value)
+{
+	glUniformMatrix4fv(m_uniforms[uniformName], 1, false, glm::value_ptr(value));
+}
 
 void Shader::bind()
 {

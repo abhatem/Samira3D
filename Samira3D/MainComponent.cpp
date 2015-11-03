@@ -34,10 +34,12 @@ void MainComponent::start()
 	update();
 }
 
-
+float temp1 = 0;
+float temp2 = 0;
 //contains main loop
 void MainComponent::update()
 {
+	
 	int frames = 0;
 	double frameCounter = 0;
 	bool shouldRender = false;
@@ -49,13 +51,15 @@ void MainComponent::update()
 		double passedTime = startTime - lastTime;
 		lastTime = startTime;
 		unprocessedTime += passedTime;
+		
 		frameCounter += unprocessedTime;
+		
 		//std::cout << "Unprocessed: " << unprocessedTime << std::endl;
 		while (unprocessedTime > frameTime)
 		{
 			shouldRender = true;
 			unprocessedTime -= frameTime;
-
+			
 			// UPDATE GAME
 			m_game->update();
 			Window::update();
@@ -75,6 +79,7 @@ void MainComponent::update()
 		}
 		if (shouldRender)
 		{
+			Time::setDelta(unprocessedTime);
 			render();
 			frames++;
 		}

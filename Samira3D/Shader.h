@@ -1,6 +1,9 @@
 #pragma once
 
 #include <string>
+#include <map>
+#include <glm/vec3.hpp>
+#include <glm/mat4x4.hpp>
 
 
 typedef struct ShaderInfo
@@ -22,6 +25,12 @@ namespace S3D {
 		void linkShader();
 		void bind();
 
+		void addUniform(std::string uniform);
+		void setUniformi(std::string uniformName, int value);
+		void setUniformf(std::string uniformName, float value);
+		void setUniform(std::string uniformName, glm::vec3 value);
+		void setUniform(std::string uniformName, const glm::mat4 &value);
+
 		void addVertexShader(std::string vertexShader);
 		void addFragmentShader(std::string fragmentShader);
 		void addGeometryShader(std::string goemetryShader);
@@ -36,6 +45,8 @@ namespace S3D {
 		std::string m_geometryShader;
 
 		unsigned int m_programId;
+
+		std::map<std::string, int> m_uniforms;
 	};
 
 }
