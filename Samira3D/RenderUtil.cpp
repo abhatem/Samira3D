@@ -18,7 +18,7 @@ namespace S3D
 			glCullFace(GL_BACK);
 			glEnable(GL_CULL_FACE);
 			glEnable(GL_DEPTH_TEST);
-
+			glEnable(GL_TEXTURE_2D);
 			// TODO: depth clamp
 
 			glEnable(GL_FRAMEBUFFER_SRGB); // to get free gamma correction
@@ -29,6 +29,12 @@ namespace S3D
 			char *c = (char *)glGetString(GL_VERSION);
 			//std::string *s = glGetString(GL_VERSION);
 			return std::string(c);
+		}
+
+		void setTexturesEnabled(bool enabled)
+		{
+			if (enabled)glEnable(GL_TEXTURE_2D);
+			else glDisable(GL_TEXTURE_2D);
 		}
 	}
 }

@@ -28,7 +28,7 @@ namespace S3D {
 		void addUniform(std::string uniform);
 		void setUniformi(std::string uniformName, int value);
 		void setUniformf(std::string uniformName, float value);
-		void setUniform(std::string uniformName, glm::vec3 value);
+		void setUniform(std::string uniformName, const glm::vec3 &value);
 		void setUniform(std::string uniformName, const glm::mat4 &value);
 
 		void addVertexShader(std::string vertexShader);

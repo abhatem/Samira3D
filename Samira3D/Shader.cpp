@@ -47,7 +47,7 @@ void Shader::setUniformf(std::string uniformName, float value)
 	glUniform1f(m_uniforms[uniformName], value);
 }
 
-void Shader::setUniform(std::string uniformName, glm::vec3 value)
+void Shader::setUniform(std::string uniformName, const glm::vec3 &value)
 {
 	glUniform3f(m_uniforms[uniformName], value.x, value.y, value.z);
 }

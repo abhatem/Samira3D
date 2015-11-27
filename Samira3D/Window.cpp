@@ -16,7 +16,7 @@ namespace S3D
 				ERROR(1, "Faild to initialize GLFW.");
 
 			glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-			glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing // lowers the frame rate a lot
+			//glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing // lowers the frame rate a lot
 			m_window = glfwCreateWindow(1024, 768, "My Title", NULL, NULL);
 			if (!m_window)
 			{
