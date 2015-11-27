@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Samira3D\Samira3D.blend = Samira3D\Samira3D.blend
 		Samira3D\Samira3D.dae = Samira3D\Samira3D.dae
 		Samira3D\Samira3D.fbx = Samira3D\Samira3D.fbx
-		Samira3D\test.png = Samira3D\test.png
+		test.png = test.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "res", "res", "{D26261B1-C751-463C-9471-D1A201C0D6AA}"
