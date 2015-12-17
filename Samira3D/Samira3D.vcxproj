@@ -130,6 +130,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicShader.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Cameras.cpp" />
     <ClCompile Include="ERROR.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Input.cpp" />
@@ -137,10 +140,12 @@
     <ClCompile Include="MainComponent.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="PhongShader.cpp" />
     <ClCompile Include="RenderUtil.cpp" />
     <ClCompile Include="ResourceLoader.cpp" />
     <ClCompile Include="SceneLoader.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Shaders.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Transform.cpp" />
@@ -149,17 +154,22 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicShader.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Cameras.h" />
     <ClInclude Include="ERROR.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="MainComponent.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="PhongShader.h" />
     <ClInclude Include="RenderUtil.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceLoader.h" />
     <ClInclude Include="SceneLoader.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="Shaders.h" />
     <ClInclude Include="SOIL\SOIL.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Time.h" />
@@ -178,6 +188,8 @@
   <ItemGroup>
     <None Include="basicShader.frag" />
     <None Include="basicShader.vert" />
+    <None Include="phongShader.frag" />
+    <None Include="phongShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

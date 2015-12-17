@@ -11,13 +11,20 @@ Dependancies for now:
 </ul>
 
 cool video of a pyriamid with a texture rotating :)
-https://www.youtube.com/watch?v=dtTJRyhaxWs&feature=youtu.be
+https://youtu.be/dtTJRyhaxWs
+
+Video of the same pyramid in perspective mode with ambient lighting and a pink mask (frame rate drop becomes evident when recording)
+https://youtu.be/32DZLT_hqUg
+
+
 
 Todo list for now:
 <ul>
 <li> Support mouse input - easy
-<li> Debug model loading (some problems arise when loading anything other than obj formats) -medium
-<li> Add class for handling materials - medium
+<li> Fix a bug that causes the framerate to drop drastically (maybe do the mvp matrix calculation in another thread).
+<li> Extend the material class - medium
+<li> Finish the phong shading model
+<li> Add macros that make the ugly template syntax, comming from boost, a bit nicer
 </ul>
 
 More at http://www.ab-hatem.com/category/samira-engine/ 

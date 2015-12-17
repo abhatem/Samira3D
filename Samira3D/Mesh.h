@@ -19,11 +19,13 @@ namespace S3D
 		unsigned int m_vbo;
 		unsigned int m_ibo;
 		unsigned int m_tbo;
+		unsigned int m_cbo;
 		unsigned int size;
 		std::vector<Vertex> m_vertices;
 		std::vector<unsigned int> m_indices;
 		std::vector<float> m_serializedVertPos;
 		std::vector<float> m_texCoords;
+		std::vector<float> m_colors;
 		//std::vector<glm::vec2> m_texCoords;
 	};
 }

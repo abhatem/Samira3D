@@ -51,7 +51,6 @@ void Shader::setUniform(std::string uniformName, const glm::vec3 &value)
 {
 	glUniform3f(m_uniforms[uniformName], value.x, value.y, value.z);
 }
-
 void Shader::setUniform(std::string uniformName, const glm::mat4 &value)
 {
 	glUniformMatrix4fv(m_uniforms[uniformName], 1, false, glm::value_ptr(value));
@@ -62,7 +61,7 @@ void Shader::bind()
 	glUseProgram(m_programId);
 }
 
-void Shader::addVertexShader(std::string text)
+void Shader::addVertexShader(const std::string &text)
 {
 	addProgram(text, GL_VERTEX_SHADER);
 }
@@ -116,4 +115,9 @@ void Shader::addProgram(std::string text, int type)
 	}
 
 	glAttachShader(m_programId, shader);
+}
+
+void Shader::updateUniforms(const glm::mat4 &worldMatrix, const glm::mat4 &projectedMatrix, Material *material)
+{
+
 }

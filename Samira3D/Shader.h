@@ -4,6 +4,7 @@
 #include <map>
 #include <glm/vec3.hpp>
 #include <glm/mat4x4.hpp>
+#include "Material.h"
 
 
 typedef struct ShaderInfo
@@ -31,9 +32,11 @@ namespace S3D {
 		void setUniform(std::string uniformName, const glm::vec3 &value);
 		void setUniform(std::string uniformName, const glm::mat4 &value);
 
-		void addVertexShader(std::string vertexShader);
+		void addVertexShader(const std::string &vertexShader);
 		void addFragmentShader(std::string fragmentShader);
 		void addGeometryShader(std::string goemetryShader);
+
+		virtual void updateUniforms(const glm::mat4 &worldMatrix, const glm::mat4 &projectedMatrix, Material *material);
 
 
 	private:
