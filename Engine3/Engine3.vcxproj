@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}</ProjectGuid>
+    <RootNamespace>Engine3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Samira3D</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\libs\assimpSource\assimp-3.3.1\include;D:\libs\freetype-windows-binaries-master\include;D:\libs\glm\include;D:\libs\glew-2.1.0\include;D:\libs\SFML-2.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\libs\assimpSource\assimp-3.3.1_bin_Debug;D:\libs\freetype-windows-binaries-master\win64;D:\libs\glew-2.1.0\lib\Release\x64;D:\libs\SFML-2.4.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;freetype.lib;sfml-network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\libs\assimpSource\assimp-3.3.1\include;D:\libs\freetype-windows-binaries-master\include;D:\libs\glm\include;D:\libs\glew-2.1.0\include;D:\libs\SFML-2.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\libs\assimpSource\assimp-3.3.1_bin_Release;D:\libs\freetype-windows-binaries-master\win64;D:\libs\glew-2.1.0\lib\Release\x64;D:\libs\SFML-2.4.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-network.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssimpImporter.cpp" />
+    <ClCompile Include="DirectionalLight.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="IndexedMesh.cpp" />
+    <ClCompile Include="IndexedMeshComp.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="mainBackup.cpp" />
+    <ClCompile Include="MaterialNormalComp.cpp" />
+    <ClCompile Include="PerspectiveCamera.cpp" />
+    <ClCompile Include="CameraAbstract.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="GeometricMesh.cpp" />
+    <ClCompile Include="Lamp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaterialComp.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshComp.cpp" />
+    <ClCompile Include="OrthoCamera.cpp" />
+    <ClCompile Include="RenderPass.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneObject.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="smClass.cpp" />
+    <ClCompile Include="StandardMaterialComp.cpp" />
+    <ClCompile Include="Text2D.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssimpImporter.h" />
+    <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="IndexedMesh.h" />
+    <ClInclude Include="IndexedMeshComp.h" />
+    <ClInclude Include="LightData.h" />
+    <ClInclude Include="MaterialNormalComp.h" />
+    <ClInclude Include="PerspectiveCamera.h" />
+    <ClInclude Include="CameraAbstract.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="GeometricMesh.h" />
+    <ClInclude Include="Lamp.h" />
+    <ClInclude Include="MaterialComp.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshComp.h" />
+    <ClInclude Include="OrthoCamera.h" />
+    <ClInclude Include="RenderPass.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneObject.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="smClass.h" />
+    <ClInclude Include="StandardMaterialComp.h" />
+    <ClInclude Include="Text2D.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="framebufferShader.frag" />
+    <None Include="framebufferShader.vert" />
+    <None Include="lampShader.frag" />
+    <None Include="lampShader.vert" />
+    <None Include="LightDepthMapShader.frag" />
+    <None Include="LightDepthMapShader.vert" />
+    <None Include="litObjectShader.frag" />
+    <None Include="litObjectShader.vert" />
+    <None Include="MaterialNormalShader.frag" />
+    <None Include="MaterialNormalShader.vert" />
+    <None Include="MaterialShader.frag" />
+    <None Include="MaterialShader.vert" />
+    <None Include="perspectiveFirst.frag" />
+    <None Include="perspectiveFirst.vert" />
+    <None Include="standardShader.frag" />
+    <None Include="standardShader.vert" />
+    <None Include="test.frag" />
+    <None Include="test.vert" />
+    <None Include="textShader.frag" />
+    <None Include="textShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="octagen-light-ffp.ttf" />
+    <Font Include="octagen-light-italic-ffp.ttf" />
+    <Font Include="octagen-roman-ffp.ttf" />
+    <Font Include="octagen-roman-italic-ffp.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="skybox\back.jpg" />
+    <Image Include="skybox\bottom.jpg" />
+    <Image Include="skybox\front.jpg" />
+    <Image Include="skybox\left.jpg" />
+    <Image Include="skybox\right.jpg" />
+    <Image Include="skybox\top.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

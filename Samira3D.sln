@@ -1,36 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Samira3D", "Samira3D\Samira3D.vcxproj", "{41BDBCF4-8F6B-45CE-A920-14162690307C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Samira3D", "Engine3\Engine3.vcxproj", "{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{019A5151-165D-486C-B1E1-CEDF765EE24C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57216F6B-8D7D-4096-B939-B16A91A8B003}"
 	ProjectSection(SolutionItems) = preProject
-		LICENSE = LICENSE
 		README.md = README.md
-		Samira3D\Samira.mtl = Samira3D\Samira.mtl
-		Samira3D\Samira.obj = Samira3D\Samira.obj
-		Samira3D\Samira3D.blend = Samira3D\Samira3D.blend
-		Samira3D\Samira3D.dae = Samira3D\Samira3D.dae
-		Samira3D\Samira3D.fbx = Samira3D\Samira3D.fbx
-		test.png = test.png
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "res", "res", "{D26261B1-C751-463C-9471-D1A201C0D6AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{41BDBCF4-8F6B-45CE-A920-14162690307C}.Debug|Win32.ActiveCfg = Debug|Win32
-		{41BDBCF4-8F6B-45CE-A920-14162690307C}.Debug|Win32.Build.0 = Debug|Win32
-		{41BDBCF4-8F6B-45CE-A920-14162690307C}.Release|Win32.ActiveCfg = Release|Win32
-		{41BDBCF4-8F6B-45CE-A920-14162690307C}.Release|Win32.Build.0 = Release|Win32
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Debug|x64.ActiveCfg = Debug|x64
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Debug|x64.Build.0 = Debug|x64
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Debug|x86.ActiveCfg = Debug|Win32
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Debug|x86.Build.0 = Debug|Win32
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Release|x64.ActiveCfg = Release|x64
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Release|x64.Build.0 = Release|x64
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Release|x86.ActiveCfg = Release|Win32
+		{EAD89E27-D77A-40B6-B2E8-87B2CE2F8A80}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CC2E314-153C-4767-AF5D-C432742E69F2}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{29f04aa6-66f2-4b06-9ace-5c9ddee151d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fonts">
+      <UniqueIdentifier>{4168ce87-5fdd-4e69-9f8e-e3726af5f4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skybox">
+      <UniqueIdentifier>{f803fdfc-a9ef-404d-af5e-3151e2cbd8c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Text2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lamp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialComp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshComp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraAbstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerspectiveCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialNormalComp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexedMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexedMeshComp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainBackup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssimpImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardMaterialComp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Text2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialComp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshComp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraAbstract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerspectiveCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialNormalComp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedMeshComp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AssimpImporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardMaterialComp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="test.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="perspectiveFirst.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="perspectiveFirst.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="framebufferShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="framebufferShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="textShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="textShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="lampShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="lampShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="litObjectShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="litObjectShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="MaterialShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="MaterialShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="LightDepthMapShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="LightDepthMapShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="MaterialNormalShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="MaterialNormalShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="standardShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="standardShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine3.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="octagen-light-ffp.ttf">
+      <Filter>fonts</Filter>
+    </Font>
+    <Font Include="octagen-light-italic-ffp.ttf">
+      <Filter>fonts</Filter>
+    </Font>
+    <Font Include="octagen-roman-ffp.ttf">
+      <Filter>fonts</Filter>
+    </Font>
+    <Font Include="octagen-roman-italic-ffp.ttf">
+      <Filter>fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="skybox\back.jpg">
+      <Filter>skybox</Filter>
+    </Image>
+    <Image Include="skybox\bottom.jpg">
+      <Filter>skybox</Filter>
+    </Image>
+    <Image Include="skybox\front.jpg">
+      <Filter>skybox</Filter>
+    </Image>
+    <Image Include="skybox\left.jpg">
+      <Filter>skybox</Filter>
+    </Image>
+    <Image Include="skybox\right.jpg">
+      <Filter>skybox</Filter>
+    </Image>
+    <Image Include="skybox\top.jpg">
+      <Filter>skybox</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
