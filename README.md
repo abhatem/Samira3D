@@ -1,5 +1,7 @@
 # Samira3D
 
+![](https://github.com/abhatem/Samira3D/blob/master/demo.gif)
+
 ## Description
 
 An older project where I attempt to build a 3D graphics engine. The engine supports:
