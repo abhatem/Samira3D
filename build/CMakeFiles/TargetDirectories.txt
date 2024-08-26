@@ -1,3 +1,0 @@
-/home/abhatem/workspace/Samira3D/build/CMakeFiles/Samira3D.dir
-/home/abhatem/workspace/Samira3D/build/CMakeFiles/edit_cache.dir
-/home/abhatem/workspace/Samira3D/build/CMakeFiles/rebuild_cache.dir
