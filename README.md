@@ -1,4 +1,3 @@
-
 # Samira3D
 
 ![](https://github.com/abhatem/Samira3D/blob/master/demo.gif)
@@ -63,22 +62,22 @@ sudo apt-get install libassimp-dev libfreetype6-dev libglm-dev libglew-dev libsf
 1. Open a terminal and navigate to the project's root directory.
 2. Create a build directory:
 
-"bash
+```bash
 mkdir build
 cd build
-"
+```
 
 3. Run CMake to configure the project:
 
-"bash
+```bash
 cmake ..
-"
+```
 
 4. Compile the project using `make`:
 
-"bash
+```bash
 make
-"
+```
 
 ## Running the Project
 
@@ -90,9 +89,9 @@ After building the project, you can run it by clicking on `Debug -> Start Debugg
 
 After compiling, you can run the project by navigating to the build directory and executing the binary:
 
-"bash
+```bash
 ./Samira3D
-"
+```
 
 Make sure that the necessary resource files (e.g., `.tga`, `.obj`, `.png`) are correctly placed in the build directory as expected by the application.
 
