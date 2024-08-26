@@ -95,3 +95,8 @@ After compiling, you can run the project by navigating to the build directory an
 
 Make sure that the necessary resource files (e.g., `.tga`, `.obj`, `.png`) are correctly placed in the build directory as expected by the application.
 
+
+## Credits
+- barrels from ![](https://opengameart.org/content/wood-barrels-pack)
+- rocks from ![](https://opengameart.org/content/rocks-0)
+- skybox from ![](https://learnopengl.com/Advanced-OpenGL/Cubemaps)
