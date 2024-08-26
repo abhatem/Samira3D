@@ -53,7 +53,7 @@ artifacts/
 *_i.h
 *.ilk
 *.meta
-*.obj
+# *.obj commenting out, as the source contains 3D models that are obj
 *.pch
 *.pdb
 *.pgc
