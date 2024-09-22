@@ -97,6 +97,6 @@ Make sure that the necessary resource files (e.g., `.tga`, `.obj`, `.png`) are c
 
 
 ## Credits
-- barrels from ![https://opengameart.org/content/wood-barrels-pack](https://opengameart.org/content/wood-barrels-pack)
-- rocks from ![https://opengameart.org/content/rocks-0](https://opengameart.org/content/rocks-0)
-- skybox from ![https://learnopengl.com/Advanced-OpenGL/Cubemaps](https://learnopengl.com/Advanced-OpenGL/Cubemaps)
+- barrels from [https://opengameart.org/content/wood-barrels-pack](https://opengameart.org/content/wood-barrels-pack)
+- rocks from [https://opengameart.org/content/rocks-0](https://opengameart.org/content/rocks-0)
+- skybox from [https://learnopengl.com/Advanced-OpenGL/Cubemaps](https://learnopengl.com/Advanced-OpenGL/Cubemaps)
