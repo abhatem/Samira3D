@@ -17,6 +17,8 @@ set(SOURCE_DIR ${CMAKE_SOURCE_DIR}/Engine3)
 # Set the build output directory (where the executable will be placed)
 set(BUILD_OUTPUT_DIR ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE})
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON) 
+
 # Find required packages
 find_package(assimp REQUIRED)
 find_package(Freetype REQUIRED)
@@ -49,6 +51,16 @@ file(GLOB_RECURSE RESOURCE_FILES
 
 # Define the executable
 add_executable(${TARGET_NAME} ${SOURCE_FILES} ${HEADER_FILES})
+
+target_include_directories(${TARGET_NAME} PRIVATE
+    ${SOURCE_DIR}
+    ${FREETYPE_INCLUDE_DIRS}
+    ${GLEW_INCLUDE_DIRS}
+    ${GLM_INCLUDE_DIRS}
+    ${SFML_INCLUDE_DIRS}
+    ${OPENGL_INCLUDE_DIRS}
+    ${ASSIMP_INCLUDE_DIRS}
+)
 
 # Link libraries
 target_link_libraries(${TARGET_NAME}
