@@ -4,6 +4,9 @@
 # build directory
 build
 
+# clang cache
+.cache
+
 # User-specific files
 *.suo
 *.user
